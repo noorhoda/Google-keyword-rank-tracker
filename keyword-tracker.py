@@ -45,10 +45,10 @@ def keyword_tracker(keyword, total_count, sites):
 
 
 keywords = open("keywords.txt","r", encoding="utf=8").read().split("\n")
-sites = open("sites.txt","r", encoding="utf=8").read().split("\n")
+sites = open("website.txt","r", encoding="utf=8").read().split("\n")
 
 # Your json file path
-gc = pygsheets.authorize(service_file='Your json file path')
+gc = pygsheets.authorize(service_file=r"Your json file path")
 
 # The name of the Google Sheet where you want the data to be stored 
 sh = gc.open('google sheet name')
